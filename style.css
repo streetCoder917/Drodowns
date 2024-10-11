@@ -1,0 +1,112 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', serif;
+}
+h2 {
+    margin: 15px 0;
+    text-align: center;
+}
+.hover_drop {
+    width: 250px;
+    margin: 10px auto 20px auto;
+}
+
+.hover_drop > button {
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+    background-color: navy;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px 8px;
+}
+
+.hover_drop > button::after {
+    content: '\25BC';
+    float: right;
+}
+
+.hover_drop > div {
+    background-color: #ccc;
+    display: none;
+    transition: .4s ease-in-out;
+}
+
+.hover_drop > div a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 10px 8px;
+    color: #000;
+}
+
+.hover_drop > div a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* hover to show dropdown menu */
+.hover_drop:hover div{
+    display: block;
+}
+
+
+/* ################################################### */
+
+.click_drop {
+    width: 250px;
+    margin: 10px auto 20px auto;
+}
+
+
+.click_drop > button {
+    width: 100%;
+    font-size: 22px;
+    text-align: left;
+    background-color: navy;
+    color: #fff;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 20px 8px;
+}
+
+
+.click_drop > .down::after {
+    content: '\25BC';
+    float: right;
+}
+
+.click_drop > div {
+    background-color: #ccc;
+    transition: .4s ease-in-out;
+}
+
+.click_drop > div a {
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    padding: 10px 8px;
+    color: #000;
+}
+
+.click_drop > div a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.close {
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+.click_drop > .up::after {
+    content: '\25B2';
+    float: right;
+}
